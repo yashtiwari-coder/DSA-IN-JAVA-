@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class unique_character {
     public static void main(String[] args) {
         String str = "programming";
