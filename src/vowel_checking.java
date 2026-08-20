@@ -1,22 +1,17 @@
-import java.util.Scanner;
-
 public class vowel_checking {
-
     public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
 
-        int count = 0;
+        String s = "hello";
 
-        for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
+        for (int i = 0; i < s.length(); i++) {
 
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-                count++;
+            char ch = s.charAt(i);
+
+            if ("aeiou".indexOf(ch) != -1) {
+                System.out.println("Vowel: " + ch);
+                System.out.println("Index: " + i);
+                break;   // first vowel ke liye
             }
         }
-
-        System.out.println("Vowels = " + count);
-
     }
 }
